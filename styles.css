@@ -6,6 +6,7 @@
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    /* border: 1px solid black; */
 }
 
 /* HTML Element */
@@ -20,6 +21,20 @@ body {
     font-family: Arial, sans-serif; /* Basic font for readability */
     line-height: 1.6; /* Improve readability with line height */
     overflow-x: hidden; /* Prevent horizontal scroll */
+    background-color: rgba(0, 50, 0, 0.8);
+    background-image: linear-gradient(
+  45deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(289deg 100% 21%) 21%,
+  hsl(315deg 100% 27%) 30%,
+  hsl(329deg 100% 36%) 39%,
+  hsl(337deg 100% 43%) 46%,
+  hsl(357deg 91% 59%) 54%,
+  hsl(17deg 100% 59%) 61%,
+  hsl(34deg 100% 53%) 69%,
+  hsl(45deg 100% 50%) 79%,
+  hsl(55deg 100% 50%) 100%
+);
 }
 
 /* Optional: Styling for common elements if needed */
@@ -36,7 +51,102 @@ button {
     display: flex;
     flex-direction: column;
     height: 90svh;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    margin-top: min(10rem, 10vh);
     align-items: center;
     gap: 1rem;
+}
+#logo {
+    height: 50px;
+    background-color: black;
+    padding: 10px;
+    object-fit: cover;
+}
+.screen {
+    padding: 1rem;
+    height: 50vh;
+    min-width: fit-content;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.input-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container h2 {
+    font-size: 2rem;
+    color: rgba(0, 50, 0, 0.8);
+    padding: 1rem;
+}
+.input-container .instruction-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem;
+    font-weight: 400;
+}
+.input-container input[ type="text"] {
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: 1px solid;
+    position: relative;
+}
+
+.input-container .result-message {
+    min-height: fit-content;
+    height: 100px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.validate-button, .clear-button {
+    width: 150px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    position: relative;
+    background-color: rgb(255, 255, 255)
+}
+.validate-button::before, .clear-button::before {
+    content: "";
+    background-image: linear-gradient(
+  45deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(289deg 100% 21%) 11%,
+  hsl(315deg 100% 27%) 22%,
+  hsl(329deg 100% 36%) 33%,
+  hsl(337deg 100% 43%) 44%,
+  hsl(357deg 91% 59%) 56%,
+  hsl(17deg 100% 59%) 67%,
+  hsl(34deg 100% 53%) 78%,
+  hsl(45deg 100% 50%) 89%,
+  hsl(55deg 100% 50%) 100%
+);
+    width: 154px;
+    height: 54px;
+    position: absolute;
+    top: -2;
+    left: -2;
+    border-radius: 2rem;
+    border: none;
+    z-index: -1;
+}
+.validate-button:hover, .clear-button:hover {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
 }
