@@ -72,6 +72,9 @@ button {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    /* border: 2px solid; */
+    border-radius: 2rem;
+    background-color: rgba(100, 100, 100, 0.5);
 }
 .input-container {
     padding: 1rem;
@@ -120,7 +123,8 @@ button {
     border: none;
     font-size: 1rem;
     position: relative;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 .validate-button::before, .clear-button::before {
     content: "";
