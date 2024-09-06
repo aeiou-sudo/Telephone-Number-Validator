@@ -51,7 +51,6 @@ button {
     display: flex;
     flex-direction: column;
     height: 90svh;
-    /* justify-content: space-evenly; */
     margin-top: min(10rem, 10vh);
     align-items: center;
     gap: 1rem;
@@ -64,15 +63,14 @@ button {
 }
 .screen {
     padding: 1rem;
-    height: 50vh;
-    min-width: fit-content;
+    min-height: 50vh;
+    height: auto;
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    /* border: 2px solid; */
     border-radius: 2rem;
     background-color: rgba(100, 100, 100, 0.15);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
@@ -82,6 +80,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 100%;
 }
 .container h2 {
     font-size: 2rem;
@@ -106,10 +105,6 @@ button {
     position: relative;
 }
 
-.input-container .result-message {
-    min-height: fit-content;
-    height: 100px;
-}
 .button-container {
     display: flex;
     justify-content: space-around;
@@ -155,4 +150,16 @@ button {
 .validate-button:hover, .clear-button:hover {
     background-color: transparent;
     color: rgba(255, 255, 255, 0.7);
+}
+.result-message {
+    min-height: 100px;
+    height: auto;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    overflow-wrap: break-word; /* Ensure long words break and don't overflow */
+    word-wrap: break-word; /* Older compatibility for text wrapping */
 }
