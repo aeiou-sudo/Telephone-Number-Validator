@@ -9,13 +9,16 @@ Check out the live demo here: [Telephone Number Validator](https://aeiou-sudo.gi
 ## Installation
 
 1. Clone the repository:
-  ` git clone https://aeiou-sudo.github.io/Telephone-Number-Validator`
+    ```bash
+      git clone https://aeiou-sudo.github.io/Telephone-Number-Validator
    
-2. Navigate to the project directory:
- ` cd telephone-number-validator`
+3. Navigate to the project directory:
+    ```bash
+      cd telephone-number-validator
 
-3. Open the index.html file in your browser:
- ` open index.html`
+5. Open the index.html file in your browser:
+    ```bash
+      open index.html
 
 Usage
 
