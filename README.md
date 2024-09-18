@@ -26,15 +26,15 @@ Usage
    
 Features
 
-*-> Validates US telephone numbers according to NANP.
-*-> Instant feedback on validation.
-*-> Simple and clean user interface.
+1. Validates US telephone numbers according to NANP.
+2. Instant feedback on validation.
+3. Simple and clean user interface.
 
 File Structure
 
-*-> index.html - Contains the structure of the web page.
-*-> styles.css - Styles the page for a clean and responsive look.
-*-> script.js - Contains the JavaScript logic for validating US telephone numbers.
+1. index.html - Contains the structure of the web page.
+2. styles.css - Styles the page for a clean and responsive look.
+3. script.js - Contains the JavaScript logic for validating US telephone numbers.
 
 Contributing
 
